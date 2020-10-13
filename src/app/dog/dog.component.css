@@ -1,0 +1,21 @@
+.btn-warning {
+  background-color: #612800;
+  color: antiquewhite;
+  border-color: #612800;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-right: 13px;
+
+
+}
+.btn-light{
+  background-color: #612800;
+  color: antiquewhite;
+  border-color: #612800;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  margin-left: 600px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}

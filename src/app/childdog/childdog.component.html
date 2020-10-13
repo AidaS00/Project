@@ -1,0 +1,10 @@
+<div class="card-columns">
+  <div class="card" *ngFor="let dog of dogs">
+    <img class="card-img" src="{{dog.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{dog.name}}</h5>
+      <p class="card-text">{{dog.des}}</p> <button type="button" class="btn btn-warning">Learn more</button>
+
+    </div>
+  </div>
+</div>

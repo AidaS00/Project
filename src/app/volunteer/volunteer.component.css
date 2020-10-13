@@ -1,0 +1,23 @@
+.vol{
+  color: #612800;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 390px;
+}
+.fill{
+  color: #612800;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 390px;
+  margin-right: 230px;
+}
+.col-md-9{
+  background-color: burlywood;
+  margin-left: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 130px;
+
+}
+.btn-default{
+  background-color: #612800;
+  color: bisque;
+}

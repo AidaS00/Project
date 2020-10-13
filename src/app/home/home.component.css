@@ -1,0 +1,54 @@
+body{}
+h3{
+  padding:150px 235px;
+  color: #612800;
+
+}
+
+.right {
+  float: right;
+  margin:7px 0 7px 7px;
+}
+.text{
+  padding: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.btn-warning {
+  background-color: #612800;
+  color: antiquewhite;
+  border-color: #612800;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-top: -250px;
+}
+.abt{
+  color: antiquewhite;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: inherit;
+  padding-left: 500px;
+  padding-top: 10px;
+}
+.about{
+  color:antiquewhite;
+  padding-top: 15px;
+  padding-left: 94px;
+  padding-right: 94px;
+  padding-bottom: 50px;
+}
+
+.reason{
+  color: antiquewhite;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: inherit;
+  padding-left: 370px;
+  padding-top: 10px;
+
+}
+.perc{
+color:antiquewhite;
+padding-top: 15px;
+padding-left: 94px;
+padding-right: 94px;
+padding-bottom: 50px;
+}
