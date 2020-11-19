@@ -16,13 +16,16 @@ import { ChilddogComponent } from './childdog/childdog.component';
 import { CatchildComponent } from './catchild/catchild.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
+import {VolunteerGuard} from './volunteer.guard';
+import {DeactivateGuard} from './deactivate.guard';
 
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'Dog', component: DogComponent},
   {path: 'Cat', component: CatComponent},
-  {path: 'Volunteer', component: VolunteerComponent}
+  {path: 'Volunteer', component: VolunteerComponent, canActivate: [VolunteerGuard], canDeactivate: [DeactivateGuard]},
+  {path: 'Login', component: LoginComponent}
 ];
 
 @NgModule({
@@ -45,7 +48,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule
   ],
-  providers: [],
+  providers: [VolunteerGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
