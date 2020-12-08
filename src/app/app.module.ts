@@ -16,16 +16,24 @@ import { ChilddogComponent } from './childdog/childdog.component';
 import { CatchildComponent } from './catchild/catchild.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
-import {VolunteerGuard} from './volunteer.guard';
 import {DeactivateGuard} from './deactivate.guard';
+import { RegisterComponent } from './register/register.component';
+import { UserComponent } from './user/user.component';
+import { HttpClientModule} from "@angular/common/http";
+import {LoggingService} from './service/logging.service';
+import {DogsharedService} from './service/dogshared.service';
+import {CatService} from './service/cat.service';
+import {ChildcatService} from './service/childcat.service';
+import {ChilddogService} from './service/childdog.service';
 
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'Dog', component: DogComponent},
   {path: 'Cat', component: CatComponent},
-  {path: 'Volunteer', component: VolunteerComponent, canActivate: [VolunteerGuard], canDeactivate: [DeactivateGuard]},
-  {path: 'Login', component: LoginComponent}
+  {path: 'Volunteer', component: VolunteerComponent, canDeactivate: [DeactivateGuard]},
+  {path: 'Login', component: LoginComponent},
+  {path: 'Register', component: RegisterComponent, canDeactivate: [DeactivateGuard]}
 ];
 
 @NgModule({
@@ -41,14 +49,23 @@ const appRoutes: Routes = [
     CatchildComponent,
     NavbarComponent,
     VolunteerComponent,
+    RegisterComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [VolunteerGuard],
+  providers: [DeactivateGuard,
+    LoggingService,
+    DogsharedService,
+  CatchildComponent,
+  CatService,
+  ChildcatService,
+  ChilddogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

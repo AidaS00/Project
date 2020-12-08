@@ -1,4 +1,7 @@
 import { Component, OnInit, OnChanges, Input} from '@angular/core';
+import { ChildcatService} from '../service/childcat.service';
+import {Cats} from '../cats';
+import {CatService} from '../service/cat.service';
 
 @Component({
   selector: 'app-catchild',
@@ -6,20 +9,22 @@ import { Component, OnInit, OnChanges, Input} from '@angular/core';
   styleUrls: ['./catchild.component.css']
 })
 export class CatchildComponent implements OnInit, OnChanges{
-  cats: any;
-  @Input()
-  value = 'catpic';
-  ngOnInit() {    		  console.log('DogComponent:OnInit');  }
-  ngOnChanges() {    	  console.log('DogComponent:OnChanges');  }
-  constructor() {
 
-    this.cats = [{image: "/assets/img/cat8.jpg",name: "Murzik", des: "Male, 5 month"},
-      {image: "/assets/img/cat9.jpg", name: "Princess", des: "Female, 2 month"},
-      {image: "/assets/img/cat10.jpg", name: "Stefani", des: "Female, 3 years"},
-      {image: "/assets/img/cat11.jpg", name: "Suleiman", des: "Male, a year"},
-      {image: "/assets/img/cat12.jpg", name: "Isko", des: "Male, a year"},
-      {image: "/assets/img/cat13.jpg",name: "Margaret", des: "Female, 5 year"}
-
-    ];
+  constructor(private cs: ChildcatService) {
   }
+
+  ngOnChanges(){
+    throw new Error("Method not implemented.");
+  }
+  sharedValue = ["image", "name", "des"];
+  cats : any[];
+
+  ngOnInit(options?: PushSubscriptionOptionsInit): void{
+    this.cs.getCats().subscribe((response) => {
+      this.cats = response;
+    }, (error) => {
+      console.log("Error Occured:" + error);
+    })
+  }
+
 }

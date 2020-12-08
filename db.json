@@ -1,0 +1,154 @@
+{
+  "Cats": [
+    {
+      "id" : 1,
+      "image": "/assets/img/cat2.jpg",
+      "name": "Charlie",
+      "des": "Male, 3 years"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/cat6.jpg",
+      "name": "Robinzon",
+      "des": "Male, 7 years"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/cat3.jpg",
+      "name": "Zira",
+      "des": "Female, 6 years"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/cat4.jpg",
+      "name": "Koftochka",
+      "des": "Female, 3 month"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/cat5.jpg",
+      "name": "Meron",
+      "des": "Male, 3 month"
+    },
+    {
+      "id": 6,
+      "image": "/assets/img/cat7.jpg",
+      "name": "Nebula",
+      "des": "Female, 7 month"
+    }
+  ],
+  "Childcat": [
+    {
+      "id": 1,
+      "image": "/assets/img/cat8.jpg",
+      "name": "Murzik",
+      "des": "Male, 5 month"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/cat9.jpg",
+      "name": "Princess",
+      "des": "Female, 2 month"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/cat10.jpg",
+      "name": "Stefani",
+      "des": "Feamle, 3 years old"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/cat11.jpg" ,
+      "name": "Suleiman" ,
+      "des": "Male, a year"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/cat12.jpg",
+      "name": "Isko" ,
+      "des": "Male, 2 years old"
+    },
+    {
+      "id": 6,
+      "image":"/assets/img/cat13.jpg" ,
+      "name": "Margaret",
+      "des":"Female, 5 years old"
+    }
+  ],
+  "Dogs": [
+    {
+    "id":1 ,
+    "image": "/assets/img/dog2.jpg",
+    "name": "Charlie",
+    "des": "Male, 3 years old"
+  },
+    {
+      "id":2 ,
+      "image": "/assets/img/dog1.jpg",
+      "name": "Luna",
+      "des": "Female, 3 years old"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/dog4.jpg",
+      "name": "Liza",
+      "des": "Female, 2,5 years old"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/dog3.jpg",
+      "name": "Bolik",
+      "des": "Male, 2,5 years old"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/dog5.jpg",
+      "name": "Lana",
+      "des": "Female, 3 years old"
+    },
+    {
+      "id": 6,
+      "image": "/assets/img/dog6.jpg",
+      "name": "Akela",
+      "des": "Male, 2,5 years old"
+    }
+  ],
+  "Childdog": [
+    {
+      "id": 1,
+      "image": "/assets/img/dog7.jpg",
+      "name": "Zena",
+      "des": "Female, 1,5 years old"
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/dog8.jpg",
+      "name":"Rich" ,
+      "des":"Male, 3,5 years old"
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/dog9.jpg",
+      "name": "Lapusha",
+      "des":"Male, 5 years old"
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/dog10.jpg",
+      "name":"Lambada" ,
+      "des":"Female, 3 years old"
+    },
+    {
+      "id": 5,
+      "image":"/assets/img/dog11.jpg" ,
+      "name": "Snezhka",
+      "des":"Female, 2 years old"
+    },
+    {
+      "id": 6,
+      "image": "/assets/img/dog12.jpg",
+      "name": "Bulka",
+      "des":"Female, 1,5 years old"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { Component,  OnChanges, OnInit} from '@angular/core';
+import {DogsharedService} from '../service/dogshared.service';
 
 
 @Component({
@@ -7,20 +8,24 @@ import { Component,  OnChanges, OnInit} from '@angular/core';
   styleUrls: ['./dog.component.css']
 })
 export class DogComponent implements OnChanges, OnInit {
-  dogs: any;
   displayPic = false;
-  ngOnInit() {    		  console.log('DogComponent:OnInit');  }
-  ngOnChanges() {    	  console.log('DogComponent:OnChanges');  }
-  constructor() {
 
-    this.dogs = [
-      {image: "/assets/img/dog2.jpg", name: "Charlie", des: "Male, 3 years old"},
-      {image: "/assets/img/dog1.jpg", name: "Luna", des: "Female, 3 years old"},
-      {image: "/assets/img/dog3.jpg", name: "Bolik", des: "Male, 2,5 years old"},
-      {image: "/assets/img/dog4.jpg", name: "Liza", des: "Female, 2,5 years old"},
-      {image: "/assets/img/dog5.jpg", name: "Lana", des: "Female, 3 years old"},
-      {image: "/assets/img/dog6.jpg", name: "Akela", des: "Male, 2,5 years old"},
-
-    ];
+  constructor(private ds: DogsharedService) {
   }
+
+  ngOnChanges(){
+    throw new Error("Method not implemented.");
+  }
+  sharedValue = ["image", "name", "des"];
+  dogs : any[];
+
+  ngOnInit(options?: PushSubscriptionOptionsInit): void{
+    this.ds.getDogs().subscribe((response) => {
+      this.dogs = response;
+    }, (error) => {
+      console.log("Error Occured:" + error);
+    })
+  }
+
 }
+
